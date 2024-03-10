@@ -1,3 +1,0 @@
-C:/02_code/2403/build/CMakeFiles/app.dir
-C:/02_code/2403/build/CMakeFiles/edit_cache.dir
-C:/02_code/2403/build/CMakeFiles/rebuild_cache.dir
