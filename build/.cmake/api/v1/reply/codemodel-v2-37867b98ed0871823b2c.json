@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "app::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-app-Debug-8938ff80562602bdb544.json",
+					"jsonFile" : "target-app-Debug-0ad5493ccadedac6348a.json",
 					"name" : "app",
 					"projectIndex" : 0
 				}
@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/02_code/test1/build",
-		"source" : "C:/02_code/test1"
+		"build" : "C:/02_code/2403/build",
+		"source" : "C:/02_code/2403"
 	},
 	"version" : 
 	{

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "app.exe"
+			"path" : "C:/02_code/2403/output/app.exe"
 		},
 		{
-			"path" : "app.pdb"
+			"path" : "C:/02_code/2403/output/app.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 8,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 3,
+				"line" : 5,
 				"parent" : 0
 			}
 		]
@@ -52,7 +52,7 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "C:/02_code/test1/inc"
+					"path" : "C:/02_code/2403/inc"
 				}
 			],
 			"language" : "C",
