@@ -1,8 +1,8 @@
 #include "base_def.h"
+#include "misc.h"
 
 int main()
 {
-    FindTarget();
-    printf("hello world\r\n");
+    func136();
     return 0;
 }

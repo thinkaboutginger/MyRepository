@@ -12,6 +12,4 @@ typedef unsigned short INT16U;
 typedef int INT32S;
 typedef unsigned int INT32U;
 
-void FindTarget(void);
-
 #endif /* BSEE_DEF_H */
