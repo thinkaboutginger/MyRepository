@@ -1,8 +1,8 @@
 #include "base_def.h"
-#include "misc.h"
+#include "include.h"
 
 int main()
 {
-    func136();
+    func();
     return 0;
 }

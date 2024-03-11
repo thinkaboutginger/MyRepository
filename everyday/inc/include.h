@@ -1,6 +1,6 @@
 #define SINGLE_NUM_H
 #ifdef SINGLE_NUM_H
 
-void func136(void);
+void func(void);
 
 #endif /* FUNC_H */
