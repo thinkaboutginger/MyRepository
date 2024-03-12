@@ -51,7 +51,7 @@ char* capitalizeTitle(char* title) {
     return title;
 }
 
-void func(void)
+void func2129(void)
 {
     INT8S title[] = "First of ALL";
     INT8S *ret = capitalizeTitle(title);
