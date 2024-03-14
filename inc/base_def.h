@@ -1,5 +1,5 @@
-#define BSEE_DEF_H
-#ifdef BSEE_DEF_H
+#define BASE_DEF_H
+#ifdef BASE_DEF_H
 
 #include "stdio.h"
 #include "stdlib.h"
@@ -16,4 +16,4 @@ typedef int INT32S;
 typedef unsigned int INT32U;
 typedef unsigned char BOOLEAN;
 
-#endif /* BSEE_DEF_H */
+#endif /* BASE_DEF_H */
