@@ -29,7 +29,8 @@ INT32S Itoa(INT32S x, char *s)
     return i;
 }
 
-BOOLEAN isPalindrome(INT32S x)
+/* 基础解法：转换成字符串，整一对头尾指针向中间移动 */
+BOOLEAN isPalindromeBase(INT32S x)
 {
     if (x < 0) {
         return FALSE;
@@ -47,8 +48,27 @@ BOOLEAN isPalindrome(INT32S x)
     return TRUE;
 }
 
+/* 进阶解法：采用数学方式。为防止数据溢出，数据类型采用long int */
+BOOLEAN isPalindromeAdvance(int x)
+{
+    if (x < 0) {
+        return FALSE;
+    }
+    long int sum = 0;
+    long int n = x;
+    while (n != 0) {
+        sum = sum * 10 + n % 10;
+        n = n / 10;
+    }
+    if (sum != x) {
+        return FALSE;
+    }
+    return TRUE;
+}
+
 void func9(void)
 {
-    BOOLEAN ret = isPalindrome(10);
+    // BOOLEAN ret = isPalindromeBase(10);
+    BOOLEAN ret = isPalindromeAdvance(10);
     printf("ret = %d\r\n", ret);
 }
