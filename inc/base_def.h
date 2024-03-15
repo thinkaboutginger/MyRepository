@@ -12,4 +12,6 @@ typedef unsigned short INT16U;
 typedef int INT32S;
 typedef unsigned int INT32U;
 
+#define ARR_SIZE(a) (sizeof(a) / sizeof(a[0]))
+
 #endif /* BSEE_DEF_H */
