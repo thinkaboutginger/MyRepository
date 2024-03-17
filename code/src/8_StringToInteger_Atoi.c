@@ -37,6 +37,7 @@
 */
 
 #define DELTA '0'
+/*********************************************以下为状态机解法**********************************************/
 enum {
     STATE_START = 0,
     STATE_SIGNED,
@@ -105,9 +106,50 @@ int myAtoi(char* s)
     return ret;
 }
 
+/*********************************************以下为暴力解法**********************************************/
+BOOLEAN isNum(char c)
+{
+    if (c >= '0' && c <= '9') {
+        return TRUE;
+    }
+    return FALSE;
+}
+
+int myAtoiBasic(char* s) {
+    double retNum = 0.0;
+    int sig = 1;
+    int i = 0;
+    while (s[i] == ' ') {
+        i++;
+    }
+    if (s[i] == '-') {
+        sig = -1;
+        i++;
+    } else if (s[i] == '+') {
+        i++;
+    }
+    int start = i;
+    while (s[i] >= '0' && s[i] <= '9') {
+        i++;
+    }
+    int end = i;
+    for (int j = start; j < end; j++) {
+        int num = s[j] - DELTA;
+        if (sig == 1 && num > INT_MAX - retNum * 10) {
+            return INT_MAX;
+        }
+        if (sig == -1 && num > INT_MAX - retNum * 10 + 1) {
+            return INT_MIN;
+        }
+        retNum = retNum * 10 + num;
+    }
+    retNum *= sig;
+    return retNum;
+}
+
 void func8(void)
 {
     char s[] = "4193 with words";
-    int ret = myAtoi(s);
+    int ret = myAtoiBasic(s);
     printf("%d ", ret);
 }
