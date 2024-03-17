@@ -1,9 +1,8 @@
 #include "base_def.h"
-#include "misc.h"
-#include "two_pointers.h"
+#include "code.h"
 
 int main()
 {
-    func189();
+    func8();
     return 0;
 }
