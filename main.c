@@ -4,6 +4,7 @@
 int main()
 {
     // func190();
-    func9();
+    // func9();
+    func14();
     return 0;
 }
