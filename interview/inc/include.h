@@ -6,5 +6,6 @@ void func9(void);
 void func14(void);
 void func28(void);
 void func125(void);
+void func169(void);
 
 #endif /* FUNC_H */
