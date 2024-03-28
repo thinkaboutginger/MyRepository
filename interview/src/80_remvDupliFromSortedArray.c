@@ -16,12 +16,6 @@
 解释：函数应返回新长度 length = 7, 并且原数组的前七个元素被修改为 0, 0, 1, 1, 2, 3, 3。不需要考虑数组中超出新长度后面的元素。
 */
 
-void swap(int *a, int *b) {
-    int tmp = *a;
-    *a = *b;
-    *b = tmp;
-}
-
 int removeDuplicates(int* nums, int numsSize) {
     int cur = nums[0];
     int count = 0;
@@ -46,7 +40,7 @@ int removeDuplicates(int* nums, int numsSize) {
     while (i < numsSize) {
         if (nums[i] != INT_MIN) {
             if (nums[j] == INT_MIN) {
-                swap(&nums[i], &nums[j]);
+                SWAP_INT(&nums[i], &nums[j]);
                 j++;
             }
         }
@@ -59,5 +53,8 @@ void func80(void)
 {
     int a[] = {0,0,1,1,1,2,2,3,3,4};
     int ret = removeDuplicates(a, ARR_SIZE(a));
-    printf("ret = %d\r\n", ret);
+    printf("ret = %d, nums = ", ret);
+    for (int i = 0; i < ret; i++) {
+        printf("%d ", a[i]);
+    }
 }

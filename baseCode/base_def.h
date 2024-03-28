@@ -19,4 +19,7 @@ typedef unsigned char BOOLEAN;
 
 #define ARR_SIZE(a) (sizeof(a) / sizeof(a[0]))
 
+void SWAP_INT(int *a, int *b);
+void SWAP_CHAR(char *a, char *b);
+
 #endif /* BASE_DEF_H */
