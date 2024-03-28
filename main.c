@@ -13,6 +13,7 @@ int main()
     // func66();
     // func191();
     // func80();
-    func383();
+    // func383();
+    func27();
     return 0;
 }
