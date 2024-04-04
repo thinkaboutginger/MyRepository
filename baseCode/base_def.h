@@ -19,7 +19,15 @@ typedef unsigned char BOOLEAN;
 
 #define ARR_SIZE(a) (sizeof(a) / sizeof(a[0]))
 
-void SWAP_INT(int *a, int *b);
-void SWAP_CHAR(char *a, char *b);
+extern struct ListNode *head;
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
+
+void SWAP_INT(INT32S *a, INT32S *b);
+void SWAP_CHAR(INT8S *a, INT8S *b);
+struct ListNode* initSingleListInt(struct ListNode *head, INT32S *data, INT32U dataLen);
+void printSingleListInt(struct ListNode *list);
 
 #endif /* BASE_DEF_H */
