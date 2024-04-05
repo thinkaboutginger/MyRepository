@@ -1,8 +1,9 @@
 #include "base_def.h"
 #include "code.h"
 
-int main()
+void main(void)
 {
-    func8();
-    return 0;
+    // func8();
+    func4();
+    return;
 }
