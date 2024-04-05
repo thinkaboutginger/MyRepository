@@ -27,7 +27,9 @@ struct ListNode {
 
 void SWAP_INT(INT32S *a, INT32S *b);
 void SWAP_CHAR(INT8S *a, INT8S *b);
-struct ListNode* initSingleListInt(struct ListNode *head, INT32S *data, INT32U dataLen);
+INT32S qsortInt(INT32S *num, INT32S numsSize);
+INT32S qsortChar(INT8S *num, INT32S numsSize);
+void initSingleListInt(struct ListNode *head, INT32S *data, INT32U dataLen);
 void printSingleListInt(struct ListNode *list);
 
 #endif /* BASE_DEF_H */

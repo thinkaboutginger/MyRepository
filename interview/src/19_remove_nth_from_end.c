@@ -41,8 +41,8 @@ void func19(void)
     struct ListNode *head = (struct ListNode *)malloc(sizeof(struct ListNode));
     INT32S data[] = {1,2,3,4,5};
     INT32U dataLen = ARR_SIZE(data);
-    head = initSingleListInt(head, data, dataLen);
+    initSingleListInt(head, data, dataLen);
     struct ListNode* ret = (struct ListNode *)malloc(sizeof(struct ListNode));
-    ret = removeNthFromEnd(head, 3);
+    ret = removeNthFromEnd(head, 2);
     printSingleListInt(ret);
 }
