@@ -19,7 +19,6 @@ typedef unsigned char BOOLEAN;
 
 #define ARR_SIZE(a) (sizeof(a) / sizeof(a[0]))
 
-extern struct ListNode *head;
 struct ListNode {
     int val;
     struct ListNode *next;
