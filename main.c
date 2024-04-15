@@ -21,6 +21,7 @@ int main()
     // func151();
     // func6();
     // func4();
-    func2();
+    // func2();
+    func13();
     return 0;
 }

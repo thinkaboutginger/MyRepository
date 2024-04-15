@@ -20,5 +20,6 @@ void func151(void);
 void func6(void);
 void func4(void);
 void func2(void);
+void func13(void);
 
 #endif /* FUNC_H */
