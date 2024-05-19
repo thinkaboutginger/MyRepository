@@ -12,6 +12,8 @@ typedef unsigned short INT16U;
 typedef int INT32S;
 typedef unsigned int INT32U;
 typedef unsigned char BOOLEAN;
+typedef double FP64;
+typedef float FP32;
 
 #define TRUE 1
 #define FALSE 0

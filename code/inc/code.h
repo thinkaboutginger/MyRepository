@@ -1,7 +1,8 @@
-#define MISC_H
-#ifdef MISC_H
+#define CODE_H
+#ifdef CODE_H
 
 void func8(void);
 void func4(void);
+void func153(void);
 
-#endif /* MISC_H */
+#endif /* CODE_H */

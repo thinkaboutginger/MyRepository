@@ -17,13 +17,13 @@
 解释：合并数组 = [1,2,3,4] ，中位数 (2 + 3) / 2 = 2.5
 */
 
-double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size) {
-    int len = nums1Size + nums2Size;
-    int middle = len / 2;
-    int *ret = (int *)malloc(sizeof(int) * len);
-    int i = 0;
-    int j = 0;
-    int k = 0;
+FP64 findMedianSortedArrays(INT32S* nums1, INT32S nums1Size, INT32S* nums2, INT32S nums2Size) {
+    INT32S len = nums1Size + nums2Size;
+    INT32S middle = len / 2;
+    INT32S *ret = (INT32S *)malloc(sizeof(INT32S) * len);
+    INT32S i = 0;
+    INT32S j = 0;
+    INT32S k = 0;
     while (i < nums1Size && j < nums2Size) {
         if (nums1[i] <= nums2[j]) {
             ret[k] = nums1[i];
@@ -44,11 +44,11 @@ double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Si
         k++;
         j++;
     }
-    double num = 0;
+    FP64 num = 0;
     if (len % 2) {
-        num = (double)ret[middle];
+        num = (FP64)ret[middle];
     } else {
-        num = (double)((double)(ret[middle] + ret[middle - 1]) / (double)2);
+        num = (FP64)((FP64)(ret[middle] + ret[middle - 1]) / (FP64)2);
     }
     return num;
 }
@@ -57,6 +57,6 @@ void func4(void)
 {
     INT32S nums1[] = {1, 2};
     INT32S nums2[] = {3, 4};
-    double ret = findMedianSortedArrays(nums1, ARR_SIZE(nums1), nums2, ARR_SIZE(nums2));
+    FP64 ret = findMedianSortedArrays(nums1, ARR_SIZE(nums1), nums2, ARR_SIZE(nums2));
     printf("ret = %.6f\r\n", ret);
 }
